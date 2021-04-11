@@ -22,3 +22,6 @@ The above project uses ;
 ### Contact information
 For more information, reach me through;
 melbyokozi11@gmail.com
+
+### Live Site
+View [live](https://melby01.github.io/The-Akan-Names/))
