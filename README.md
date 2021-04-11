@@ -14,10 +14,10 @@ To access this project on your local files, you can clone it using these steps
 This will clone the repositoty into your local folder
 
 ### Technologies used.
-The above project uses 
-    1.HMTL
-    2.CSS
-    3.JAVASCRIPT
+The above project uses ;
+1. HMTL
+2. CSS
+3. JAVASCRIPT
 
 ### Contact information
 For more information, reach me through;
