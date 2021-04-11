@@ -1,0 +1,22 @@
+body {
+    background-color: lightcoral;
+ }
+ .jumbotron {
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: bolder;
+     color: darkslategrey;
+ }
+ .description {
+     text-align: center;
+ }
+ h2 {
+     text-align: center;
+ }
+ /* .submit button {
+     color: darkred;
+ } */
+ /* .submit button:hover {
+     color: darkslategrey;
+ } */
+ 

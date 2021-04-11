@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> DOCUMENTS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+<body>
+    <div class="container">
+    <div class="jumbotron">
+        <h1><i>The Akan-Names.</i></h1>
+    </div>
+    <div class="description">
+<p>Akan names are derivied from Ghanian culture.Frequently in Ghana,children are given their first names
+    as a 'day name' which corresponds to the day in the week they were born.This form down below will help 
+    you known your akan name.</p>
+<h2><strong>FILL IN THE FORM TO GET TO KNOW YOUR AKAN NAME</strong></h2>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="century" class="labels">Century</label>
+            <input type="number" class="form-control" placeholder="CC" id="century" required min="1" max="30">
+        </div>
+        <div class="form-group">
+            <label for="year" class="labels">Year</label>
+            <input type="number" class="form-control" placeholder="YY" id="year" required min="1" max="99">
+        </div>
+        <div class="form-group">
+            <label for="month" class="labels">Month</label>
+            <input type="number" class="form-control" placeholder="MM" id="month" required min="1" max="12">
+        </div>
+        <div class="form-group">
+            <label for="day of the month" class="labels">Day</label>
+            <input type="number" class="form-control" placeholder="DD" id="day" required min="1" max="31">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Select gender</label>
+            <div class="col-sm-13">
+            <select class="form-control " id="gender">
+              <option value=""></option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+        </div>
+          </div>
+    <div class="submit">
+    <a href="#result"><button type="button" class="btn btn-success" name="button"
+        onclick="akanNames()">submit</button></a><br><br>
+    </div>
+        </form>
+        </div> 
+        <script src="/script.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
