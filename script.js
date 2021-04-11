@@ -35,3 +35,4 @@ else if (gender === "Male"){
 else if (gender === "Female"){
    alert("Your akan name is " + akanFemale[d])
 }
+}

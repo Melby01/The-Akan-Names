@@ -1,5 +1,5 @@
 body {
-    background-color: lightcoral;
+    background-color:black;
  }
  .jumbotron {
      text-align: center;
@@ -7,7 +7,7 @@ body {
      font-weight: bolder;
      color: darkslategrey;
  }
- .description {
+ .introduction{
      text-align: center;
  }
  h2 {
