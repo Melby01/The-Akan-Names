@@ -11,17 +11,20 @@ function akanNames(){
    var dayOfTheWeek = birthDate.getDay();
    if (day <= 0 || day > 31) {
      alert("Please enter a valid date!");
+     throw new Error; 
    }
    else if (month <1  || month>12 || month==2 && day>29)
    {
       alert("invalid month");
+      throw new Error;  
    }
    else if (year <= 0 || year > 2021) {
        alert("Please enter a valid year!");
+       throw new Error;  
    }
    else if (genders.length===0) {
      alert("Please select your gender")
-     throw new Error; //Abort javascript execution from here
+     throw new Error;  
    }
    else if (genders == "Male") {
        document.getElementById("displayName").innerHTML = "You were born on a " + days[dayOfTheWeek] + ". " + " Your Akan name is " + maleNames[dayOfTheWeek] + "!"
@@ -29,8 +32,7 @@ function akanNames(){
    else if (genders == "Female") {
        document.getElementById("displayName").innerHTML = "You were born on a " + days[dayOfTheWeek] + "." + " Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
    }
-   document.getElementById("hidden").style.display = 'block';
-   let frm = document.getElementsByName('form')[0];
-   frm.reset();  // Clear form fields
-   return false; // Prevent page refresh
+   let frm = document.getElementsByName('form1')[0];
+   frm.reset();
+   return false;
  }
