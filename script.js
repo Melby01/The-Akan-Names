@@ -1,38 +1,36 @@
-
-var dayNames=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var akanFemale=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-var akanMale=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-
-function akanNames() {
-   var century=parseInt(document.getElementById("century").value);
-   var year=parseInt(document.getElementById("year").value);
-   var month=parseInt(document.getElementById("month").value);
-   var Day=parseInt(document.getElementById("day").value);
-   var gender=document.getElementById("gender").value;
-
-var CC=century;
-var YY=year;
-var MM=month;
-var DD=day;
-
-var d = parseInt(((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD) % 7
-
-if (CC < 1 || CC > 30){
-   alert("Invalid cc");
-}
-else if (YY < 1 || YY > 99){
-   alert("Invalid yy");
-}
-else if (MM < 1 || MM > 12){
-   alert("Invalid mm");
-}
-else if (DD < 1 || DD > 31) {
-   alert("Invalid dd");
-}
-else if (gender === "Male"){
-   alert("Your akan name is " + akanMale[d])
-}
-else if (gender === "Female"){
-   alert("Your akan name is " + akanFemale[d])
-}
-}
+function akanNames(){
+   var year=document.getElementById("year").value;
+   var month=document.getElementById("month").value;
+   var day=document.getElementById("day").value;
+   var genders=document.getElementById("gender").value;
+   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+   var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+   let dateString = month+"/"+day+"/"+year;
+   var birthDate = new Date(dateString);
+   var dayOfTheWeek = birthDate.getDay();
+   if (day <= 0 || day > 31) {
+     alert("Please enter a valid date!");
+   }
+   else if (month <1  || month>12 || month==2 && day>29)
+   {
+      alert("invalid month");
+   }
+   else if (year <= 0 || year > 2021) {
+       alert("Please enter a valid year!");
+   }
+   else if (genders.length===0) {
+     alert("Please select your gender")
+     throw new Error; //Abort javascript execution from here
+   }
+   else if (genders == "Male") {
+       document.getElementById("displayName").innerHTML = "You were born on a " + days[dayOfTheWeek] + ". " + " Your Akan name is " + maleNames[dayOfTheWeek] + "!"
+   }
+   else if (genders == "Female") {
+       document.getElementById("displayName").innerHTML = "You were born on a " + days[dayOfTheWeek] + "." + " Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
+   }
+   document.getElementById("hidden").style.display = 'block';
+   let frm = document.getElementsByName('form')[0];
+   frm.reset();  // Clear form fields
+   return false; // Prevent page refresh
+ }

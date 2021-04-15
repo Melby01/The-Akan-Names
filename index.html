@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> THE AKAN NAMES</title> 
+    <title> THE AKAN NAMES</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 <body>
@@ -11,56 +11,51 @@
         GHANA <br>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ghana_Flag.svg/1200px-Ghana_Flag.svg.png" width="30%" height="30%">
     </div>
-
     <!--The introductory part of the project-->
     <div class="introduction">
 <p>Akan names are derivied from Ghanian culture.Frequently in Ghana,children are given their first names
-    as a 'day name' which corresponds to the day in the week they were born.This form down below will help 
+    as a 'day name' which corresponds to the day in the week they were born.This form down below will help
     you known your akan name.</p>
 <h2><strong>FILL IN THE FORM TO GET TO KNOW YOUR AKAN NAME</strong></h2>
     </div>
     <!----------------------------------->
-
     <!--The form creation part-->
     <form>
-        <div class="form-group">
-            <label for="century" class="labels">Century</label>
-            <input type="number" class="form-control" placeholder="CC" id="century" required min="1" max="30">
-        </div>
-
         <div class="form-group">
             <label for="year" class="labels">Year</label>
             <input type="number" class="form-control" placeholder="YY" id="year" required min="1" max="99">
         </div>
-
         <div class="form-group">
             <label for="month" class="labels">Month</label>
             <input type="number" class="form-control" placeholder="MM" id="month" required min="1" max="12">
         </div>
-
         <div class="form-group">
             <label for="day of the month" class="labels">Day</label>
             <input type="number" class="form-control" placeholder="DD" id="day" required min="1" max="31">
         </div>
-
         <div class="form-group">
             <label for="exampleFormControlSelect1">Select gender</label>
             <div class="col-sm-13">
-
                 <!--The selection of either male or female gender-->
                     <select class="form-control " id="gender">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     </select>
+            </div>
         </div>
-          </div>
     <div class="submit">
+        <p id="displayName"></p>
     <a href="#result"><button type="button" class="btn btn-success" name="button"
         onclick="akanNames()">SUBMIT</button></a><br><br>
     </div>
         </form>
         <!----------------------------->
-        </div> 
+        </div>
         <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
