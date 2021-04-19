@@ -3,12 +3,15 @@ function akanNames(){
    var month=document.getElementById("month").value;
    var day=document.getElementById("day").value;
    var genders=document.getElementById("gender").value;
+
    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
    var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
    let dateString = month+"/"+day+"/"+year;
    var birthDate = new Date(dateString);
    var dayOfTheWeek = birthDate.getDay();
+   
    if (day <= 0 || day > 31) {
      alert("Please enter a valid date!");
    }
@@ -21,7 +24,7 @@ function akanNames(){
    }
    else if (genders.length===0) {
      alert("Please select your gender")
-     throw new Error; //Abort javascript execution from here
+     throw new Error;  
    }
    else if (genders == "Male") {
        document.getElementById("displayName").innerHTML = "You were born on a " + days[dayOfTheWeek] + ". " + " Your Akan name is " + maleNames[dayOfTheWeek] + "!"
